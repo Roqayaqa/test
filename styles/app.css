@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400&display=swap");
+body {
+  font-family: 'Source Code Pro', 'monospace';
+  background-image: url("dark.jpg");
+  background-size: 1600px 900px;
+}
+
+.app-header {
+  background-color: transparent;
+}
+
+.app-header .app-navbar .app-navbar-menu li a {
+  color: white;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.849);
+  opacity: 0.5;
+  font-weight: 400;
+  position: relative;
+}
+
+.app-header .app-navbar .app-navbar-menu li a::after {
+  content: '';
+  position: absolute;
+  height: 3px;
+  background-color: #dbcf1c;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.app-header .app-navbar .app-navbar-menu li a:hover {
+  opacity: 1;
+}
+
+.app-header .app-navbar .app-navbar-menu li a:hover::after {
+  right: 20%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.app-header .app-navbar .app-navbar-menu li.active a {
+  font-weight: 600;
+  opacity: 1;
+}
+
+.app-header .app-navbar .app-navbar-menu li.active a::after {
+  right: 20%;
+  left: 20%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/*# sourceMappingURL=app.css.map */
